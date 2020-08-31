@@ -1,0 +1,39 @@
+What's Cloud computing?
+ Cloud computing is a utility services that delivers computing operations() through
+ the cloud (wirless services) to enterprises,startups, corporation, government instistuitions, homes etc. 
+
+Building IaaS services:
+ Infrastructure as a Services (IaaS), are the core components  that are managed by
+ the Cloud provider. Examples are: the core network, storage, physical machine, hypervisor.
+
+
+Building PaaS services:
+ Platform as a Service (PaaS) are services provided by the cloud providers 
+ that make you free to concentrate on what matters, great service and customer experiences
+ by leaving all underpinnig resources to the cloud provider. 
+
+Software as a Service SaaS:  
+ Are collection of pre-packaged IT solutions or softwares that we can easily "subscribe to". e.g. office 363, adobe creative cloud,
+ onedrive, figma, github, online editors etc.
+
+Security and Monitoring: 
+
+
+                               /* Azure cloud computing */
+Azure cloud computing urls: azure.com; portal.azure.com; shell.azure.com
+ 
+some azure IaaS services: 
+ - azure networking & gateways
+ - virtual machines
+ - containers
+ - authentication and identity
+ - storage
+ - devtest labs
+ - backup solutions
+
+        // Azure network ( azure virtual networks )
+
+
+
+
+

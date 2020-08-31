@@ -1,0 +1,23 @@
+ // Git created by Linux torvalds 
+  * Git is a Version Control System (VCS) for tracking changes in computer files( .java, .js, .html, .python etc)
+  * Can take snapshots(commits) of your scripts changes 
+  */
+
+ // Basic commands
+
+$ git intit //insitalize local repository
+$ git add <file> //adds file(s) to index
+$ git status //check status of working tree
+$ git commit //commit changes in index
+$ git commit // push to remote repository
+$ git push  //push to remote repository
+$ git pull  //pull latest from remote repository
+$ git clone  //clone or copy a repository into a new directory on your local device
+  git branch // creats a new branch
+  git checkout // exist from current branch to the branch you want to open
+  git remote add origin https://github.com/YawManuel/a-b-c-of-coding.git  // connects to your remote repo
+  git branch -m master  //
+  git push -u oringin master  //
+
+ 
+

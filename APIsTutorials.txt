@@ -1,0 +1,13 @@
+Application Programming Interface (API):
+ - Programming APIs:
+ are found or created in programming languages and frameworks to be used. e.g: fetch API, string.toUpperCase(); etc
+ these are made to ease up programmers from writting low level codes which waste time creates burnouts.
+ - Remote APIs:
+  example are REST API which are currently used widely on the web. 
+  *REST APIs contraints are: Client-Server Architecture, statelessness, Layered System
+     Cacheability, Uniform Design, Code on Demand.
+ - HTTP methods/verbs and their CRUD match:
+    GET = Read
+    POST = Create
+    PUT/PATCH = Update
+    DELETE = Delete

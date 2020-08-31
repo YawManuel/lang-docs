@@ -1,0 +1,302 @@
+                        
+                        /*** HTML Markup elements and their attributes ***/
+
+  // structure of html elements //
+  
+<a></a> and <br /> /* elements. Elements are usually made up of two tags: an opening tag and a closing tag (<a></a>). 
+ Elements with both opening and closing tags are called: "container tags" whilst elements with only one tag is called: "empty tags" */
+ 
+ <!.. elements attributes: it names and their values ...> 
+  
+  <img src= "Osu Castle.jpg" /> 
+   /* "src" is the attribute name whilst "Osu Castle" is the attribute value.
+    NB: all attributes value should start with a letter or an underscore. 
+   */
+   
+ <!.. some html basic structure elements ...>
+   
+  <html></html> /* contains all html elements, css and javascripts codes. This elements tells the browser is a webpage.*/
+  <body></body> /* contains all html elements except the <head></head> and <html></html> elements. */
+  <head></head> /* contains the <meta>; <title></title>; <script></script> elements and other elements that are writen in the head element. */
+  <title></title> /* contents of the title element are either shown in the top of the browser. */
+   E.g: <html>
+           <head>
+                <title>This is the Title of the Page</title>
+           </head>
+           <body>
+                <p>Anything within the body of a web page is displayed in the main browser window. </p>
+           </body>
+       </html>.
+
+  /* NB: Elements=tags=markups... they are the same.
+      Structural markup: the elements that you can use to describe both headings and paragraphs
+        Semantic markup: which provides extra information;  such as where emphasis is placed in a sentence, that something
+      you have written is a quotation (and who said it), the meaning of acronyms, and so on. */
+
+  // hmtl text elements //
+  
+  <!... other structural text elements ...!>
+  <!... headings and paragraphs ...>
+
+   <h#></h#> /* is the element for headings. There are six levels of heading which decreases in font size according to thier ascending level,
+     these are:  <h1>This is a Main Heading</h1>
+                <h2>This is a Level 2 Heading</h2>
+                <h3>This is a Level 3 Heading</h3>
+                <h4>This is a Level 4 Heading</h4>
+                <h5>This is a Level 5 Heading</h5>
+                <h6>This is a Level 6 Heading</h6> ... <h6> having the smallest font size. */
+
+     <p></p> /* is the element for paragraph. */
+       
+  <!... text design elements and emphasis elements ...>
+
+    <b></b> is use to bolden a word or a sentence. <i></i> use to italize a word or sentence.
+
+    <sup></sup> superscript. 
+    <sub></sub> stands for subscript.
+    E.g: <p>On the 4<sup>th</sup> of September you will learn about E=MC<sup>2</sup>.The amount of CO<sub>2</sub> in the atmosphere </p>
+
+    <br />... the element for line break. <hr /> ... the element for horizontal rule.
+
+  <!... other semantic text elements ...!>
+
+    /* There are text elements that are not intended to affect the structure of your web pages but they do add extra information to the
+    pages,these are known as "semantic markups". */
+
+    <em></em> /* the emphasis element allows you to indicate where emphasis should be placed on selected words, browsers displays it in italized form as default.
+    <blockquote></blockquote> /* indicates that a block of text is a quotation, usually indented by most browsers as default.*/ 
+ 
+    <strong></strong> /* indicates that its content has strong importance,by default browsers displays it in bold */
+    <q></q> /* puts quotations on quotes, thou not supported by some browsers */
+
+    <abbr title= ""></abbr>
+    <acronym title =""></acronym>   /* If you use an abbreviation or an acronym, then the <abbr> element can be used. */
+    E.g: <p><acronym title="National Aeronautics and Space Administration">NASA</acronym> do some crazy space stuff. </p>
+    
+    <address></address> /* element has quite a specifi use: to contain contact details for the author of the page. */
+
+    <dfn></dfn> /* is used to indicate the defiing instance of a new term. */
+    <cite></cite> /* element can be used to indicate where the citation is from. */
+
+    <ins></ins>
+    <del></del>  
+    /* The content of a <ins> element is usually underlined while the content of a <del> element usually has a line through it.*/
+    <s></s> /* indicates something that is no longer accurate or relevant (but thatshould not be deleted). */
+
+    // html list elements //
+
+   <!... Numbered lists ...!>
+     
+      <ol></ol> /* this element is also called ordered list. */
+      <li></li> /* Each item in the list is placed between */
+       E.g: <ol> 
+           <li>Chop potatoes into quarters</li>
+            <li>Simmer in salted water for 15-20 minutes until tender</li>
+            <li>Heat milk, butter and nutmeg</li>
+            <li>Drain potatoes and mash</li>
+            <li>Mix in the milk mixture</li>
+            </ol>
+
+
+   <!... Bullet lists ...!>
+     
+      <ul></ul> /* this element is also known as unordered list */
+      <li></li> 
+      E.g: <ul>
+              <li>Chop potatoes into quarters</li>
+              <li>Simmer in salted water for 15-20nminutes until tender</li>
+              <li>Heat milk, butter and nutmeg</li>
+              <li>Drain potatoes and mash</li>
+              <li>Mix in the milk mixture</li>
+              </ul>
+
+
+   <!... Defiition lists ...!>
+    
+      <dl></dl> /* definition element usually consists of a series of terms and their defiitions. */
+      <dt></dt> /* the element for definition term, use to contain the term being defined */
+      <dd></dd> /* the element use to contain the definition */
+
+   <!... Nesting lists ...!>
+    
+     E.g: <ul>
+            <li>Mousses</li>
+            <li>Pastries
+               <ul>
+                 <li>Croissant</li>
+                 <li>Mille-feuille</li>
+                 <li>Palmier</li>
+                 <li>Profiterole</li>
+               </ul>
+           </li>
+           <li>Tarts</li>
+       </ul>
+
+      // html links element //
+
+   /* creating links was the main reason why Tim Berners-Lee created the website, enabling the very idea of browsing or surfing. */
+   /* there are two main types of links, these are: absolute (linking to another website) and relative links (linking to webpages on the same website. */
+
+    <!... Linking one website to another website ...!>
+     <a href="http://www.empireonline.com">Empire</a>
+
+    <!... Linking one page to another on the same website ...!>
+     <a href="index.html">Home</a>
+
+    <!... Linking one part of a web page to another part of the same page ...!>
+     <a href="#top">top</a> /* id name is used */
+
+    <!... Linking a specific part of another page (whether from the same website or different website) ...!>
+     <a href="http:/www.htmlandcssbookcom/#bottom">
+    
+    <!... Links that open in a new  browser window ...!>
+     <a href="http://www.imdb.com" target="_blank"> /* the anchor tag has the attribute: "target" and the value "_blank" */
+
+    <!... Links that start up your email program and address a new email to someone ...!>
+     <a href="mailto:jon@example.org">Email Jon</a> /* the value for the attribute name "href" should be "mailto:" */
+
+     // html image element //
+
+      <img /> /* html image element, is always an empty tag */
+      /* main attributes of img tag:
+       src = this tells the browser where it can fid the image fie. 
+       alt = this provides a text description of the image which describes the image if you cannot see it.
+       title = make browsers display the content of this in a tootip when the user hovers over the image. */
+       
+       /* other attributes of img tag:
+       align = not really used in html due to CSS3.
+       transparency = should be save with "gif" and "png" (if is also a drop shadow) file format.
+       lightbox = */
+     E.g:
+     <img src="images/quokka.jpg" alt="A family of quokka" title="The quokka is an Australian marsupial that is similar in size to the
+     domestic cat." />
+    
+     /* NB: saving images in the right format (Whenever you have many different
+     colors in a picture you should use a JPEG) and Use GIF or PNG format when saving images with few colors or large
+     areas of the same color.; saving images at the right size and using the Correct resolution. JPGs, GIFs, and PNGs belong to
+     a type of image format known as bitmap */
+      
+       <figure><figcaption></figcaption></figure>
+
+      // html table elements //
+
+       <table border="2" bgcolor="#efefef">
+              <tr> <th rowspan= "3">Tuesday</th>
+                   <td colspan="3">Gym</td>
+                   <td >Home Ec</td>
+              </tr>
+       </table>
+    NB: /* usually use to split long tables */
+        <thead></thead> /* The headings of the table should sit inside the <thead> element. */
+        <tbody></tbody> /* The body of the table should sit inside the <tbody> element. */
+        <tfoot></tfoot> /* The footer of the table should be inside the <tfoot> element. */ 
+
+     // html forms elements //
+
+     <form action="http://www.example.com/subscribe.php" method="get"></form> /* form main tag */
+      
+      NB: /* Form attribute: "action" Every <form> element requires an action attribute. Its value is the URL for the page on the
+          server that will receive the information in the form when it is submitted. Forms can be sent using one of
+          two methods: get( use when you are just retrieving data from the web server) or post (use when adding or deleting information from database).
+
+    <!... Adding text form controls ...!>    
+     <input type="text" name="username" size="15" maxlength="30" /> /* text input tag attributes and it name and value */
+     <input type="password" name="password" size="15" maxlength="30" /> /* password tag; attributes and it name and value */
+     <textarea name="comments" rows="4" col="3"></textarea>
+
+    <!... Making choices forms controls ...!>
+      <input type="radio" name="genre" value="rock" checked="checked" /> /* radio button */
+      <input type="checkbox" name="service" value="itunes" checked="checked" /> /* checkbox tag */
+      <select name="devices">
+                <option value="ipod">iPod</option>
+                <option value="radio">Radio</option>
+                <option value="computer">Computer</option>
+      </select> /* the drop down list tag with it subtag */
+
+    <!... Submitting forms controls ...!>
+     <input type="submit" value="Upload" /> /* submit button */
+     <input type="image" src="images/subscribe.jpg" width="100" height="20" /> /* image button */
+
+
+    <!... Uploading forms control ...!>
+    <input type="file" name="user-song" />
+
+    <!... other form controls ...!>
+     <button><img src="images/add.gif" alt="add" width="10" height="10" /> Add</button> /* button control */
+     <input type="hidden" name="bookmark" value="lyrics" /> /* hidden control */
+
+      /* labelling form controls */
+      <label></label>
+      NB: <label for="female">Female</label>
+            <input id="male" type="radio" name="gender" value="m">
+          <label for="male">Male</label>
+
+      /* Grouping form elements */
+      <fieldset>
+           <legend></legend>
+      </fieldset>
+   
+     E.g: <fieldset>
+               <legend>Contact details</legend>
+               <label>Email: <br />
+               <input type="text" name="email" /></label><br />
+               <label>Mobile: <br />
+               <input type="text" name="mobile" /></label><br />
+               <label>Telephone: <br />
+               <input type="text" name="telephone" /></label>
+          </fieldset>
+    NB: The <legend> element can come directly after the opening <fieldset> tag and contains a caption which helps identify the
+        purpose of that group of form controls.
+      
+        /* html 5: form validation */
+        E.g:
+        <input type="text" name="username" required="required" />
+        <input type="password" name="password" required="required" />
+         /*  give users messages if the form control has not been filed in correctly or not filled, it uses the attribute "required". */
+
+       /* html 5: date input */ 
+      <input type="date" name="depart" />
+ 
+      /* html 5: email and url input */
+       <input type="email" name="email" />
+       <input type="url" name="website" />
+
+      /* html 5: search input */
+      <input type="search" name="search" />
+    
+     NB: /* On any text input, you can also use an attribute called 'placeholder' whose value is 'text' that will be shown in the
+            text box until the user clicks in that area */
+          <input type="search" name="search" placeholder="Enter keyword" />
+
+     // Block elements and Inline elements //
+ 
+     /* Block elements always appear to start on a new line in the browser window. */
+         e.g. <h1>, <p>, <ul> and <li>
+     /* Inline elements always appear to continue on the same line as their neighbouring element
+         e.g. <a>, <b>, <em> and <img>.
+      */
+
+     // Global attributes //
+
+     <! id and class attributes are global attributes !>
+        e.g. <p id="pullquote"> </p>    /* the id value should be use for only one element*/
+             <p class="importance"></p> /* the id value can be use for multiple elements */
+         /* NB: id and class attributes help to use JS to access the webpage and CSS to style the webpage */
+
+
+     // div and span elements (grouping elements) //
+        /* the div elements groups both blockquote elements and inline elements into one block level box & can also use it to group comments from visitors 
+           <div> comments of div elements should end at the end of div closing tag </div> <!-- enclosing my div example --!>
+        */
+        /* the span element is use to contain a number of inline elements */   
+      
+     // iframe // 
+     /* < iframe (inline frame) is like a little window that has been cut into your page
+         and in that window you can see another page. e.g. the embedding of google map into a page.*/
+        e.g. <iframe width="354" height="34" src="http://maps.google.co.uk/maps?q=moma+new+york 
+        &amp;output=embed frameborder="0" scrolling="no">
+             </iframe>
+     
+               
+     
+     

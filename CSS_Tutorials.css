@@ -1,0 +1,78 @@
+  
+  /* Traditional CSS
+   **************** */
+   :root {             // creating of variables in css
+    --colorblue: ;
+    --mainfont: ;
+    --headerfont: ;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+
+ }
+ 
+    .li {
+      list-style-type: none;  /* this property removes default disc style and any style from the <li></li> element */
+  }
+
+
+  /* CSS Grid
+   **************** */
+   .wrapper {
+      display: grid;  /* this property initiate the grid css style to take effect on the element and it children element */
+      grid-gap: 20px;
+      padding: 0;
+      list-style: none;
+      grid-template-columns: 1fr;
+ }
+ 
+   /* learn more from the CssGrid documentation: w3schools.com/docs csstricks.com/docs
+   */
+
+  /* CSS Flexbox
+   **************** */
+  .Container-Parent-Flex {
+      display: flex;    /* this property initiates the flexbox css styles to take effect on it element and child element */
+      flex-direction: row/column; 
+      flex-wrap: wrap;
+         
+    }
+
+  .Container-Child {
+      align-content: flex-start;
+      flex-grow: 2;
+      flex-shrink: 1;
+      flex-basis: 120px;
+      align-self: center;    /* used when you want to move a specific content on the page */
+      flex-flow: column wrap;    /* this property combines both flexdirection and flexwrap */
+      flex: 1 0 auto;    /* this property combines both flexgrow, flexshrink and flexbasis */   
+   
+   }
+
+  .Container-Child {
+      align-content: flex-start;
+      flex-grow: 2;
+      flex-shrink: 1;
+      flex-basis: 120px;
+      align-self: center;  /* used when you want to move a specific content on the page */
+      flex-flow: column wrap;  /* this property combines both flexdirection and flexwrap */
+      flex: 1 0 auto;  /* this property combines both flexgrow, flexshrink and flexbasis */   
+   
+   } 
+
+   /* learn more from the Flexbox documentation: w3schools.com/docs csstricks.com/docs
+   */
+    
+  /* Bootstrap
+   **************** */
+
+
+
+   /* learn more from the Bootstrap documentation: thebootstrap.com/docs 
+   */
+
+ 
+  /* Sass
+   **************** */
+
+
+  /* learn more from the Sass documentation: Sass.com/docs 
+   */

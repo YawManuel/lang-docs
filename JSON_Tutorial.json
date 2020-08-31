@@ -1,0 +1,58 @@
+ // JASON: Javascript Object Notation
+ /* - used for Data Representation Format
+  * - Commonly used for APIs and Configs
+  * - Lightweight and Easy to Read/Write
+  * - Integrates easily with most languages ( e.g. JavaScript)
+  */
+
+ // JSON TYPES...
+ /* - JSON supports Strings: "Code erm" "Ghana man"
+  * - Numbers: 10, 2, 4, 4.
+  * - Booleans: true & false
+  * - null: null
+  * - Arrays: [1, 2, 3] ["Hello", "Lady"]
+  * - Objects: { "Name": "Code man" } { "age": 3 }
+  */
+
+ // Creating Objects in JSON
+  
+ /* To create an object, you need a curly braces to hold the object.
+  * Where the key is hold in a parenthesis then a colon and then the value inside a parenthesis.
+  */
+
+  { 
+    "name": "value",  // Strings 
+    "Lucky number": 9, // Numbers 
+    "Likes": ["Reading", "Writing ('poems and codes')"], // Arrays 
+    "WriterReally": true, // Boolean 
+    "friends": [{ "name": "King Code", "LuckyNumber": 900,
+               "TrueWriter": true,
+               "Palz": [...]
+              }] //Nested objects and Arrays 
+
+   }
+
+   // An Array of objects (List of companies): 
+
+    [ { 
+        "name": "Word Inc",
+        "numberOfEmployees": 300,
+        "ceo": "King Code",
+        "rating": 3.6    
+       },
+
+        { 
+         "name": "King Code Jnr",
+         "numberOfEmployees": 9,
+         "ceo": null, // The 'null' means 'zero or nothing', meaning there is no ceo
+         "rating": 4.3
+       
+         } 
+      ]
+
+      console.log(JSON.parse.(company)) // If you want parse the JSON code in an HTML doc 
+
+ 
+  
+
+ 

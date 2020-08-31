@@ -1,0 +1,142 @@
+ // Database (DB) Tutorial
+ /* A database is collection of related items, store on a paper, file, mind, computer, etc.
+  */
+
+ // Types of database:
+ /* Relational database: organizes data into one or more table
+  * e.g. SQL (Standard Query Language)
+  * Non-relational database: is an organize data that is just anything which is not relational but in an object module.
+  * e.g. JSON, XML, BLOP, NoSQL etc.
+  */
+
+ /* NB: Both relational and non-relational DB can be use to:
+  * - To interact with Database Management System softwares (DBMS)
+  * - Used to perform C.R.U.D (Copy, Read, Update and Delete) operations.
+  */
+
+ // Non-Relational Database stores data in anything except tables
+ /* Stores data in: Documents, Graphs, Objects, etc
+  * Non-relational database DBMS is: NRDBMS
+  * e.g. of NRDBMS are: mongoDB, dynamoDB, apache cassandra, firebase, etc
+  * NB: most NRDBMS implements their own languages for performing C.R.U.D and other operations 
+  */
+
+ // Relational Database
+  /* stores data in tabular or table form
+   * e.g. of RDBMS are: mySQL, Oracle, postgreSQL, mariaDB, etc
+   * RDBMS uses SQL as it language to interact RDBMS softwares
+   */
+
+ // Database queries are request made to the database management system for specific information 
+ /* Database queries are codes writen to query an information from a database
+
+ // Relational database (Table and Keys)
+  /* Keys are the unique identfier of every table
+   * The types of keys are: primary keys, segregate keys, natural keys, foriegn keys, composite keys
+   * Keys are used to define relations between tables             ssn= social security   number.
+   */
+
+ // SQL Basics
+ /* - use to perform C.R.U.D 
+  * - create & manage database
+  * - design & create database tables
+  * - perform administration tasks (security), backup, user management, import/export, etc
+  * NB: Not all RDBMS' follow the same SQL standards, thou they all use SQL  
+  */
+ 
+ /* SQL is a hybrid of four languages */
+
+  pop sql (a text editor)
+TimeStamp 
+  BLOB
+
+
+ // SQL e.g. codes //
+ CREATE TABLE student ( 
+      student_id INT,
+      name VARCHAR(20),
+      programme VARCHAR(20),
+     PRIMARY KEY (student_id)
+    );   // creates table
+
+ DESCRIBE student; // destcribes the table you created and called "student"
+
+ DROP TABLE student; // this code deletes table
+
+ ALTER TABLE student ADD academic records DECIMAL(1, 2); // alters table (adding academic records to the row of the table)
+ 
+ SELECT * FROM student; // this makes us to grab all info about a table (student)
+
+ ALTER TABLE student DROP COLUMN academic records; // alters table by removing columns
+
+
+  // Inserting data into table //
+ INSERT INTO student VALUES(001, "Lovelace", "Industrial Chemistry"); // inserts a student wtih a programme
+
+ INSERT INTO student(student_id, name) VALUES(003, "Ferguson"); // inserts a student with no programme
+ 
+
+ // Adding Contraints to tables //     
+ CREATE TABLE student ( 
+      student_id INT,
+      name VARCHAR(20) NOT NULL, // this is a contraints which means a student must always have a value
+      programme VARCHAR(20) UNIQUE, // this contraints means two or more student shouln't have the same type of programme
+     PRIMARY KEY (student_id)
+    ); // inserts data straight into a table by adding constraints   
+
+ CREATE TABLE student ( 
+      student_id INT  AUTO_INCREMENT, // the AUTO_INCREMENT contraints auto increase the student_id 
+      name VARCHAR(20),
+      programme VARCHAR(20) DEFAULT "No programme", // the DEFAULT contraints adds the string attached to it when no data is available
+      PRIMARY KEY (student_id)
+    );   // creates table
+  
+
+   // Update and Deleting inside a database table //
+  // update specific columns and rows on the student table
+  UPDATE student
+  SET major = "Indus Chem"
+  WHERE major = "Industrial Chemistry";
+
+  UPDATE student
+  SET major = "Indus Chem"
+  WHERE student_id = 003;
+
+  UPDATE student
+  SET major = "Indus Chem"
+  WHERE major = "Industrial Chemistry" OR major = "Mathematics;
+
+  UPDATE student
+  SET name = "Moore, Lovelace", major = "No Programme"
+  WHERE student_id = 001;
+  
+  // update the whole student table(general and not specific)
+  UPDATE student
+  SET major = "No Programme" 
+
+  // deleting in tables or deleting table
+  DELETE FROM  student
+  WHERE student_id = 003; // deletes specifically from a table(row)
+
+  DELETE FROM student // deletes the whole table
+
+  // Data Queries (getting info from a database)
+  SELECT *
+  FROM student
+  ORDER BY student_id, programme;
+
+  SELECT name
+  FROM student;
+
+  SELECT student.name
+  FROM student
+  ORDER BY student_id DESC // Orders in descending form
+
+  SELECT name, programme
+  FROM student
+  WHERE programme = "Indus Chem" OR name = "Lovelace"; // orders specifically
+
+ 
+  // Company database Intro//
+  /* NB: the more complex the database schema the more complex the SQL query code
+  /*
